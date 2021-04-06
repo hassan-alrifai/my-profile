@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Platform Web';
+    src: url('../fonts/PlatformWeb-Bold.woff2') format('woff2'),
+    url('../fonts/PlatformWeb-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #f5f1ed;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+.main-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-hero h1 {
+    font-family: 'Platform Web', sans-serif;
+    color: #000;
+    z-index: 9;
+    text-transform: uppercase;
+    font-size: 10vw;
+    position: absolute;
+    bottom: 5vh;
+    margin: 0;
+    pointer-events: none;
+}
+
+.h1-reverse {
+    font-family: 'Platform Web', sans-serif;
+    color: #FFFFFF;
+    z-index: 9;
+    text-transform: uppercase;
+    font-size: 10vw;
+    position: absolute;
+    top: 5vh;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+.san-liquid {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vh;
+    height: 70vh;
+}
+
+.parc-guell {
+    margin: 0;
+    position: absolute;
+    right: -15px;
+    transform: rotate(90deg);
+    transform-origin: right;
+    bottom: 0;
+}
+
+.main-nav {
+    position: fixed;
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 3em;
+    left: 0;
+    height: 80px;
+    z-index: 9;
+}
+
+.logo-name {
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+
+.main-menu-ul {
+    list-style-type: none;
+    position: fixed;
+    right: 3em;
+    text-align: right;
+    padding: 0;
+}
+
+.main-menu-ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.portfolio-menu {
+    position: absolute;
+    right: 0;
+}
+
+.portfolio-menu-ul {
+    padding: 0;
+}
+
+.portfolio-menu-ul li {
+    font-size: 5vh;
+    font-family: 'Platform Web', sans-serif;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.portfolio-menu-ul li a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    transition: 0.8s;
+    animation: hover-out 0.5s ease-in-out;
+}
+
+.portfolio-menu-ul li a:hover {
+    color: #FFF;
+    transition: 0.3s;
+    position: relative;
+    right: 10%;
+    animation: hover-in 0.5s ease-in-out;
+}
+
+.work-list div {
+    margin: 7vh 0;
+}
+
+.work-canvas {
+    width: 1337px;
+    height: 752px;
+}
+
+.foodoptimiz {
+    background-image: url("../img/foodoptimiz.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 1450px) {
+    .work-canvas {
+        width: 1000px;
+        height: 560px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .work-canvas {
+        width: 860px;
+        height: 482px;
+    }
+
+}
+
+
+.social ul {
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Platform Web', sans-serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+.social ul li a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    transition: 0.8s;
+    animation: hover-out 0.5s ease-in-out;
+}
+
+.social ul li a:hover {
+    color: #FFF;
+    transition: 0.3s;
+    position: relative;
+    right: 10%;
+    animation: hover-in 0.5s ease-in-out;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.about-text {
+    text-align: right;
+    width: calc(100% /2);
+    right: 3em;
+    font-size: 2vw;
+}
+
+.about-text h4 {
+    text-align: left;
+}
+
+.contact {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-text {
+    font-size: 2vw;
+}
+
+.email {
+    font-family: 'Platform Web', sans-serif;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 9vw;
+    width: 80%;
+    bottom: 40px;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 9;
+    word-break: break-word;
+    transition: 0.3s;
+}
+
+.email:hover {
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.download-cv {
+    color: #000;
+    transition: 0.3s;
+}
+
+.download-cv:hover {
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.end {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.san-sign {
+    position: absolute;
+    left: 3em;
+}
+
+.moe-sign {
+    position: absolute;
+    right: 3em;
+}
+
+/*========= ANIMATIONS =========*/
+
+@keyframes hover-in {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 10%;
+    }
+}
+@keyframes hover-out {
+    0% {
+        right: 10%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@media (max-width: 980px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    .main-nav {
+        padding: 0.5em 1em;
+    }
+
+    .main-menu-ul {
+        display: none;
+    }
+    .work-canvas {
+        display: none;
+    }
+    .portfolio-menu {
+        display: none;
+    }
+    .h1-reverse {
+        display: none;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about-text {
+        width: 90%;
+        font-size: 6vw;
+    }
+    h4 {
+        font-size: 6vw;
+    }
+    .contact {
+        margin: 2em;
+    }
+    .end {
+        display: none;
+    }
+    .parc-guell {
+        display: none;
+    }
+}
